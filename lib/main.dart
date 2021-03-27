@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:portfolio/portfolio_page.dart';
@@ -10,10 +9,13 @@ import 'package:portfolio/portfolio_page.dart';
 void main() => runApp(PortfolioApp());
 
 class PortfolioApp extends StatelessWidget {
+  
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: PortfolioPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
