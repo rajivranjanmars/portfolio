@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:recase/recase.dart';
+import 'package:flutter_linkify/flutter_linkify.dart';
+import 'dart:async';
+
+import 'package:url_launcher/url_launcher.dart';
 
 class PortfolioPage extends StatelessWidget {
-  ReCase rc = new ReCase('avengers infinity war');
+  ReCase rc = new ReCase('');
 
   @override
   Widget build(BuildContext context) {
@@ -48,11 +52,7 @@ class PortfolioPage extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            Text(
-              "Developer",
-              textAlign: TextAlign.justify,
-              style: TextStyle(fontSize: 30),
-            ),
+            
             Container(
               margin: EdgeInsets.all(30),
               padding: EdgeInsets.all(10),
@@ -96,6 +96,7 @@ class PortfolioPage extends StatelessWidget {
                 ),
               ),
             ),
+            
             Wrap(
               children: [
                 Padding(
@@ -104,23 +105,21 @@ class PortfolioPage extends StatelessWidget {
                       backgroundColor: Colors.amber,
                       label: Container(
                           padding: EdgeInsets.all(10),
-                          child: Text("Data structure"))),
+                          child: Text("Competitive Programmer"))),
                 ),
                 Container(
                   padding: EdgeInsets.all(10),
                   child: Chip(
                       backgroundColor: Colors.amber,
                       label: Container(
-                          padding: EdgeInsets.all(10),
-                          child: Text("Web "))),
+                          padding: EdgeInsets.all(10), child: Text("Web "))),
                 ),
                 Padding(
                   padding: EdgeInsets.all(10),
                   child: Chip(
                       backgroundColor: Colors.amber,
                       label: Container(
-                          padding: EdgeInsets.all(10),
-                          child: Text("Flutter"))),
+                          padding: EdgeInsets.all(10), child: Text("Flutter"))),
                 ),
               ],
             ),
@@ -130,3 +129,4 @@ class PortfolioPage extends StatelessWidget {
     );
   }
 }
+
