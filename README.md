@@ -8,4 +8,4 @@ Install Flutter, then run `flutter pub get` and `flutter run` from this director
 
 ## Author
 
-Author: [rajivranjanmars](https://rajivranjana.in).
+Author: [Rajiv Ranjan](https://rajivranjan.in).
